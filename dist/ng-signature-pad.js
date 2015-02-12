@@ -27,37 +27,10 @@
                 });
               }
 
-              if (!$attrs.ngSignaturePadDotSize) {
-                $attrs.$set('ngSignaturePadDotSize', null);
-              }
-
-              if (!$attrs.ngSignaturePadMinWidth) {
-                $attrs.$set('ngSignaturePadMinWidth', null);
-              }
-
-              if (!$attrs.ngSignaturePadBackgroundColor) {
-                $attrs.$set('ngSignaturePadBackgroundColor', null);
-              }
-
-              if (!$attrs.ngSignaturePadPenColor) {
-                $attrs.$set('ngSignaturePadPenColor', null);
-              }
-
-              if (!$attrs.ngSignaturePadVelocityFilterWeight) {
-                $attrs.$set('ngSignaturePadVelocityFilterWeight', null);
-              }
-
-              if (!$attrs.ngSignaturePadOnBegin) {
-                $attrs.$set('ngSignaturePadOnBegin', null);
-              }
-
-              if (!$attrs.ngSignaturePadOnEnd) {
-                $attrs.$set('ngSignaturePadOnEnd', null);
-              }
-
               $scope.ngSignaturePad = new $window.SignaturePad($element[0], {
                 dotSize: $attrs.ngSignaturePadDotSize,
                 minWidth: $attrs.ngSignaturePadMinWidth,
+                maxWidth: $attrs.ngSignaturePadMaxWidth,
                 backgroundColor: $attrs.ngSignaturePadBackgroundColor,
                 penColor: $attrs.ngSignaturePadPenColor,
                 velocityFilterWeight: $attrs.ngSignaturePadVelocityFilterWeight,
